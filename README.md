@@ -11,4 +11,4 @@ This project aims to generate insight into the sales performance and inventory u
 The Data Source used for this project is an *Excel file*, which is a secondary data and it is provided by the Business Manager of the Abuja division of Kultra Mega Stores Inventory.
 
 ### Tool Used
-SQL Server is used for this project for querying and analysis. It can be downloaded here [](
+SQL Server is used for this project for querying and analysis. It can be [downloaded here](https://www.microsoft.com/en/sql-server/sql-server-downloads)
