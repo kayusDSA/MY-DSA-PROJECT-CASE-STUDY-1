@@ -1,3 +1,4 @@
+![Q1](https://github.com/user-attachments/assets/0aec355d-5152-4bb1-8241-ee8e20d0c851)
 # MY-DSA-PROJECT-CASE-STUDY-1
 This is one of my projects, in Digital SkillUp Africa (DSA) through The IncubatorNG, which focuses on Sales Performance and Inventory Utilization of Kultra Mega Stores (KMS), Lagos, Nigeria. An Excel file containing order data from 2009 to 2012 was analyzed to provide key insights and findings for management use.
 
@@ -79,6 +80,7 @@ order by TotalSales desc
 ~~~~~
 
    
+
 
 
 
