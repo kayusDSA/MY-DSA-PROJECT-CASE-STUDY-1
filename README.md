@@ -1,4 +1,3 @@
-![Q1](https://github.com/user-attachments/assets/0aec355d-5152-4bb1-8241-ee8e20d0c851)
 # MY-DSA-PROJECT-CASE-STUDY-1
 This is one of my projects, in Digital SkillUp Africa (DSA) through The IncubatorNG, which focuses on Sales Performance and Inventory Utilization of Kultra Mega Stores (KMS), Lagos, Nigeria. An Excel file containing order data from 2009 to 2012 was analyzed to provide key insights and findings for management use.
 
@@ -78,8 +77,56 @@ from Inventory
 group by Product_category
 order by TotalSales desc
 ~~~~~
+![Q1](https://github.com/user-attachments/assets/777bc307-35e9-43d0-9d25-04068ba1bf4f)
+
+
+![Q4](https://github.com/user-attachments/assets/4895e66b-f8c6-47b3-be92-e40573135f04)
+
+
+![Q2a](https://github.com/user-attachments/assets/a5434a25-9fc3-430c-9d13-14999467b103)
+
 
    
+![Q2b](https://github.com/user-attachments/assets/e509e14c-a732-4e87-a067-67f1248db59b)
+
+
+
+![Q3](https://github.com/user-attachments/assets/f5bebaa7-3d75-455f-8849-dedc08f7bf01)
+
+
+![Q5](https://github.com/user-attachments/assets/9c02cc16-62a0-4aec-949e-6ce0a1f5bc1d)
+
+
+![Q6a](https://github.com/user-attachments/assets/01cbaf90-2c75-43e6-8637-838e1943ed9b)
+
+
+![Q6b](https://github.com/user-attachments/assets/9b7a5940-3fe1-4cfe-9377-5c34f0d5933d)
+
+
+![Q7](https://github.com/user-attachments/assets/7fcb2c4e-216f-4c6f-9d30-0ee76f321007)
+
+
+![Q8](https://github.com/user-attachments/assets/c9927aec-6c9d-4b7f-962e-4324867090be)
+
+
+
+![Q9](https://github.com/user-attachments/assets/c224bdf3-f11d-4c90-ba2a-278b3f33ac9d)
+
+
+![Q10](https://github.com/user-attachments/assets/89a130a6-411f-4158-b4e3-c62688dd5f9b)
+
+
+![Q11](https://github.com/user-attachments/assets/5fea6651-c385-4fa9-87bf-ff9a9b3278f0)
+
+
+
+
+
+
+
+
+
+
 
 
 
