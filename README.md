@@ -68,8 +68,11 @@ iii. Data Cleaning:
 
 ### Data Analysis
 Data analyses were performed under two case scenarios
-#### Case Scenario I 
-1.	Which product category had the highest sales
+
+### Case Scenario I 
+
+#### 1.	Which product category had the highest sales
+
 Sequel Query
 ~~~~ Sequel Query
 select Product_Category, SUM(distinct Row_ID) as TotalSales
@@ -77,21 +80,36 @@ from Inventory
 group by Product_category
 order by TotalSales desc
 ~~~~~
+##### Table 1: Product Category with The Highest Sales
 ![Q1](https://github.com/user-attachments/assets/777bc307-35e9-43d0-9d25-04068ba1bf4f)
 
+The result feom Table 1 above shows that Office Supplies had the highest sales of $19,468,739.
 
-![Q4](https://github.com/user-attachments/assets/4895e66b-f8c6-47b3-be92-e40573135f04)
+### 2.	What are the Top 3 and Bottom 3 regions in terms of sales? 
+a.	Top 3 regions by sales
+Sequel Query
+~~~SQL
+Select top 3 Region, SUM(Sales) AS TotalSales
+from Inventory
+group by Region
+order by TotalSales desc
+                  ~~~~
 
-
+#### Table 2a: Top Three (3) Regions by Sales 
 ![Q2a](https://github.com/user-attachments/assets/a5434a25-9fc3-430c-9d13-14999467b103)
+Statistics result reveals that West, Ontario and Prarie are the top 3 regions that have highest sales as $3,597,549, $3,063,212 and $2,837,305 respectively.
 
 
-   
+#### 2b. Bottom 3 regions in terms of sales
+
 ![Q2b](https://github.com/user-attachments/assets/e509e14c-a732-4e87-a067-67f1248db59b)
 
 
 
 ![Q3](https://github.com/user-attachments/assets/f5bebaa7-3d75-455f-8849-dedc08f7bf01)
+
+
+![Q4](https://github.com/user-attachments/assets/4895e66b-f8c6-47b3-be92-e40573135f04)
 
 
 ![Q5](https://github.com/user-attachments/assets/9c02cc16-62a0-4aec-949e-6ce0a1f5bc1d)
