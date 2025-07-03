@@ -22,9 +22,6 @@ Row_ID from smallint to int
 Order_ID from smallint to int
 Click on Allow Nulls for Unit_Price and Profit
 
-Sales from float
-Discount from float
-
 ### Exploratory Data Analysis for Kultra Mega Stores (2009–2012)
 ### Understanding the Dataset
 - Order ID
@@ -74,27 +71,28 @@ Data analyses were performed under two case scenarios
 #### 1.	Product Category that had the Highest Sales
 
 Sequel Query
-~~~~ SQL
+~~~ SQL
 select Product_Category, SUM(distinct Row_ID) as TotalSales
 from Inventory
 group by Product_category
 order by TotalSales desc
-                    ~~~~~
+                    ~~~
 
-Table 1: Product Category with The Highest Sales
+#### Table 1: Product Category with The Highest Sales
+
 ![Q1](https://github.com/user-attachments/assets/777bc307-35e9-43d0-9d25-04068ba1bf4f)
 
 The result feom Table 1 above shows that Office Supplies had the highest sales of $19,468,739.
 
-2.	The Top 3 and Bottom 3 Regions in Terms of Sales
+### 2.	The Top 3 and Bottom 3 Regions in Terms of Sales
 a.	Top 3 regions by sales
+
 Sequel Query
-~~~SQL
+
 Select top 3 Region, SUM(Sales) AS TotalSales
 from Inventory
 group by Region
 order by TotalSales desc
-                  ~~~~
 
 Table 2a: Top Three (3) Regions by Sales
 
