@@ -314,43 +314,78 @@ SELECT
 
 Statistics from Table 11 above shows a clear pattern that shows a match between shipping methods and order priorities, although it is not perfectly strict. Here's the analysis from the table:
 1. Critical Priority Orders: Here, cost
-Express Air: 200 orders, ₦198,005 (1 day)
-Delivery Truck: 228 orders, ₦1,221,313 (1 day)
+Express Air: 200 orders, $198,005 (1 day)
+Delivery Truck: 228 orders, $1,221,313 (1 day)
 Analysis: This category uses the two methods. Though both achieved 1-day delivery. However, Delivery Truck is far more expensive than Express Air. For critical orders, using Express Air is both faster and cheaper. It can be concluded that, Kultra Mega Stores inappropriately spent shipping costs. In other words, the company overpaid for Trucks when Express Air was better.
 2. High Priority Orders:
-Express Air: 212 orders, ₦206,125 (1 day)
-Delivery Truck: 248 orders, ₦1,338,508 (1 day)
+Express Air: 212 orders, $206,125 (1 day)
+Delivery Truck: 248 orders, $1,338,508 (1 day)
 Analysis: Similarly, this category shares the same issue with the Critical Priority Orders: Delivery Truck is unnecessarily expensive. This resulted into inefficiency. That is, the company could have relied more Express Air.
 3. Low Priority Orders: Here, it is expected that shipping costs should be minimized and speed should not be considered as important.
-Express Air: 190 orders, ₦191,312 (1 day)
-Delivery Truck: 250 orders, ₦1,332,956 (4 days)
+Express Air: 190 orders, $191,312 (1 day)
+Delivery Truck: 250 orders, $1,332,956 (4 days)
 The issue here is that Express Air was too fast and expensive for low-priority products. At least, Delivery Truck here was slower (4 days), but still very costly. It can be concluded that there was an inappropriate spending by using premium method for low-priority delivery.
 3. Medium Priority Orders:
-Express Air: 201 orders, ₦247,152 (1 day)
-Delivery Truck: 205 orders, ₦976,999 (1 day)
+Express Air: 201 orders, $247,152 (1 day)
+Delivery Truck: 205 orders, $976,999 (1 day)
 Analysis: Both shipping modes delivered fast, but Delivery Truck was significantly more expensive. Conclusively, the company could optimize costs better by favoring Express Air.
 5. Not Specified:
-Express Air: 180 orders, ₦194,394 (1 day)
-Delivery Truck: 215 orders, ₦1,085,457
+Express Air: 180 orders, $194,394 (1 day)
+Delivery Truck: 215 orders, $1,085,457
 Analysis: Orders without stated priority were still shipped using Express Air significantly, which is not logical without urgency justification. Hence, the company Inappropriately spent shipping cost with unclear priority classification.
 Conclusion:
 The company, Kultra Mega Stores (KMS) did not appropriately spend shipping costs based on order priority.
 
-**Recommendation:**
-Kultra Mega Stores (KMS) does not consistently align shipping methods with order priorities. A policy review is needed to ensure that:
-1.	Standardize Shipping Rules:
-Express Air only for Critical/High priority.
-Delivery Truck for Low priority, but only if cheaper.
-2.	Audit Delivery Truck Usage:
-Costs are consistently higher, with no delivery speed advantage.
-3.	Enforce Priority Labelling:
-Avoid "Not Specified" to make informed shipping decisions.
-4.	Optimize Cost-Effectiveness:
-Favor Express Air when it is both faster and cheaper (as seen here).
-Proper controls need to be put in place to reduce costs and match urgency with speed.
-
 ### Findings from the Study
 Based on the full analysis of the Kultra Mega Stores (KMS) sales and inventory utilization data from 2009–2012, here are the key findings.
+Study shows that the top troduct category, Office Supplies generated the highest total sales of $19,468,739, indicating strong demand and market penetration in this category.
+
+In terms of regional performance, the study shows that West, Ontario, and Prarie are the top 3 regions with highest sales $3.6M, $3.06M and $2.83M respectively whereas the 
+bottom 3 regions with low sales (all under $1M) are Nunavut, Northwest Territories, and Yukon , indicating weak market engagement or logistical challenges in those areas.
+Appliances in Ontario sold $202,347, highlighting a niche opportunity in regional product targeting
+The bottom customers had sales below $500. These are potential revenue growth segments if approached with strategic engagement.
+Delivery Truck incurred the highest shipping cost ($51,972), despite being the slowest method.
+
+Furthermore, study reveals that Express Air, although faster, had a lower total cost ($7,851), suggesting possible inefficiencies in logistics decisions. Emily Phan with revenue of $118,906 is the Top customer. The top products purchased are Office Machines, Copiers, and Fax equipment.
+The most profitable consumer, Emily Phan generated  $34,005 profit.
+
+Moreover, findings shows that a large number of customers who are Corporate Customers, Consumer Customers, Home Office Customers and Small Business Customers returned their items for quality control and service improvement tracking. There is no consistent alignment between order priority and shipping methods.
+For instance, Critical orders used both Express Air and Delivery Truck, but the Truck was more expensive despite similar delivery speed. Low-priority orders were unnecessarily shipped using Express Air.
+
+### Recommendations to KMS Management
+
+Based on the findings, the following recommendations are provided for Kultra Mega Stores (KMS) management:
+Optimize Shipping Decisions:
+- Strengthen High-Value Customer Relationships
+- Improve buying experience of customers and gather feedback to address pain points.
+- For customers like Emily Phan, build long-term loyalty programs and explore exclusive service tiers.
+- Bundle frequently purchased items (e.g., office machines) into business packages.
+- Target Underperforming Regions
+- Investigate barriers in Nunavut, Yukon, etc.
+- Run localized promotions or campaigns to test interest in specific product categories.
+- Review Product-Market Fit
+- Evaluate if the right products are available to each segment and region.
+- Adjust inventory strategies to meet regional and segment demand better.
+- Track KPIs for Low-Performing Segments
+- Improve Data Practices
+- Enforce proper Order Priority labeling to avoid misuse of expensive shipping methods.
+- Regularly audit shipping and delivery metrics to ensure performance aligns with cost.
+- Monitor order frequency, value, and customer lifetime value regularly.
+- Use Express Air only for Critical and High Priority orders.
+- Use Delivery Truck only for Low Priority, and only if cost-effective.
+- Audit Delivery Truck usage: it's consistently costlier than needed.
+- Engage Low-Value Customers and understand who they are (e.g., small businesses, price-sensitive individuals).
+- Personalize communication with offers, loyalty programs, and email campaigns.
+- Cross-sell and upsell related products.
+
+
+
+
+
+
+
+
+
 
                                
 
