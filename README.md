@@ -350,7 +350,7 @@ Favor Express Air when it is both faster and cheaper (as seen here).
 Proper controls need to be put in place to reduce costs and match urgency with speed.
 
 ### Findings from the Study
-
+Based on the full analysis of the Kultra Mega Stores (KMS) sales and inventory utilization data from 2009–2012, here are the key findings.
 
                                
 
