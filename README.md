@@ -1,4 +1,4 @@
-# MY-DSA-PROJECT-CASE-STUDY-1
+# MY DSA PROJECT CASE STUDY 1
 This is one of my projects, in Digital SkillUp Africa (DSA) through The IncubatorNG, which focuses on Sales Performance and Inventory Utilization of Kultra Mega Stores (KMS), Lagos, Nigeria. An Excel file containing order data from 2009 to 2012 was analyzed to provide key insights and findings for management use.
 
 ### Project Topic 
@@ -71,12 +71,12 @@ Data analyses were performed under two case scenarios
 #### 1.	Product Category that had the Highest Sales
 
 **SQL Query**
-~~~SQL
+~~~sql
 select Product_Category, SUM(distinct Row_ID) as TotalSales
 from Inventory
 group by Product_category
 order by TotalSales desc
-
+~~~
 **Table 1: Product Category with The Highest Sales**
 
 ![Q1](https://github.com/user-attachments/assets/777bc307-35e9-43d0-9d25-04068ba1bf4f)
@@ -87,61 +87,65 @@ The result feom Table 1 above shows that Office Supplies had the highest sales o
 a.	Top 3 regions by sales
 
 **SQL Query**
-~~~SQL
+~~~sql
 Select top 3 Region, SUM(Sales) AS TotalSales
 from Inventory
 group by Region
 order by TotalSales desc
-
+~~~
 **Table 2a: Top Three (3) Regions by Sales**
 
-Statistics result reveals that West, Ontario and Prarie are the top 3 regions that have highest sales as $3,597,549, $3,063,212 and $2,837,305 respectively.
+![Q2a](https://github.com/user-attachments/assets/4ddfa4b9-1cd5-4024-b8e0-44faa0fcabd0)
 
+Statistics from Table 2a above reveals that West, Ontario and Prarie are the top 3 regions that have highest sales as $3,597,549, $3,063,212 and $2,837,305 respectively.
 
 ### 2b. Bottom 3 Regions in Terms of Sales
 
 **SQL Query**
-~~~SQL
+~~~sql
 Select top 3 Region, SUM(Sales) AS TotalSales
 from Inventory
 group by Region
 order by TotalSales asc
+~~~
+**Table 2b: Bottom Three (3) Regions in Terms of Sales**
 
-**Table 3: Bottom Three (3) Regions in Terms of Sales**
+![Q2b](https://github.com/user-attachments/assets/99adb31f-e3f2-4ba9-a748-0c2f6ef96617)
 
-
-Table 3 above reveals that Nunavut, Northwest Territories and Yukon are the bottom 3 regions by sales as $116,376, $800,847 and $975,867 respectively.
+Table 2b above reveals that Nunavut, Northwest Territories and Yukon are the bottom 3 regions by sales as $116,376, $800,847 and $975,867 respectively.
 
 
 ### 3.	The Total Sales of Appliances in Ontario
 
 **Sequel Query**
-~~~SQL
+~~~sql
 SELECT Region,  Product_Sub_Category, SUM(Sales) AS TotalSales
 FROM Inventory
 WHERE Region = 'Ontario'
 AND Product_Sub_Category = 'Appliances' 
 GROUP BY Region,  Product_Sub_Category
 ORDER BY TotalSales desc
-                  
-**Table 4: Total Sales of Appliances in Ontario**
+~~~               
+**Table 3: Total Sales of Appliances in Ontario**
 
-Table 4 above shows the total sales of appliances in Ontario. Statistics shows that the total sales of appliances in Ontaria were N202,347.
+![Q3](https://github.com/user-attachments/assets/474f76af-5286-488e-b2ea-60e2c75eae6a)
 
+Table 3 above shows the total sales of appliances in Ontario. Statistics shows that the total sales of appliances in Ontaria were N202,347.
 
 ### 4.	Advise the management of KMS on what to do to increase the revenue from the bottom 10 customers
 
 **SQL Query**
-~~~SQL
+~~~sql
 Select top 10 Customer_Name, SUM(Sales) AS TotalSales
 from Inventory
 group by Customer_Name
 order by TotalSales asc
+~~~
+**Table 4: The Bottom Ten (10) Customers**
 
-**Table 5: The Bottom Ten (10) Customers**
+![Q4](https://github.com/user-attachments/assets/393f81d5-56cf-44ff-b0d9-a587e3681d27)
 
-
-The result from the above table reveals the bottom 10 customers of Kultra Mega Stores (KMS). As a Business Intelligence Analyst, based on this result, I therefore advise the management of KMS on how to increase the revenue from their bottom 10 customers based on customers’ behavior, preferences, and value potential. My advice will take a structural approach as follows
+The result from Table 4 above reveals the bottom 10 customers of Kultra Mega Stores (KMS). As a Business Intelligence Analyst, based on this result, I therefore advise the management of KMS on how to increase the revenue from their bottom 10 customers based on customers’ behavior, preferences, and value potential. My advice will take a structural approach as follows
 
 1.	Understand the Bottom Customers: 
 There is a need to segment these bottom 10 customers. That is, are they small businesses, one-time buyers, or price-sensitive clients? The management needs to analyze the purchase patterns of these customers. In other words, what do they buy? How often? What’s their average spend? Also, there is a need to identify friction points: Are there service, pricing, or product issues reducing their engagement?
@@ -169,17 +173,17 @@ There is a need to segment these bottom 10 customers. That is, are they small bu
 
 **SQL Query**
 
-~~~SQL
+~~~sql
 Select top 5 Ship_Mode, SUM(Shipping_Cost) AS TotalShipping_Cost
 from Inventory
 group by Ship_Mode
 order by TotalShipping_Cost desc
+~~~
+**Table 5: The Most Shipping Cost Incurred by shipping method**
 
-**Table 6: The Most Shipping Cost Incurred by shipping method**
+![Q5](https://github.com/user-attachments/assets/ffe3194c-d8e2-4844-9511-4ba666381fe4)
 
-
-Statistics from Table 6 above shows that KMS incurred the most shipping cost ($51,972) on Delivery Truck.
-
+Statistics from Table 5 above shows that KMS incurred the most shipping cost ($51,972) on Delivery Truck.
 
 ### Case Scenario II
  
@@ -187,48 +191,53 @@ Statistics from Table 6 above shows that KMS incurred the most shipping cost ($5
 a. The Most Valuable Customers
 
 **SQL Query**
-~~~SQL
+~~~sql
 SELECT top 5 Customer_Name, SUM(Order_Quantity*Unit_Price) AS TotalRevenue
 FROM Inventory
 GROUP BY Customer_Name
 ORDER BY TotalRevenue DESC
+~~~
+**Table 6a: The Most Valuable Customers by Total Revenue Generated**
 
-**Table 7a: The Most Valuable Customers by Total Revenue Generated**
+![Q6a](https://github.com/user-attachments/assets/e47da9d3-ec1d-4a0e-a27d-6314cd601052)
 
-Table 7a above depicts the top 5 most valuable customers by the total revenue generated. Statistics from the above table 7a reveals that Emily Phan, Deborah Bunmifield, Sylvia Foulston, Roy Skaria and Alejandro Grove are the most valuable customers by their total revenue at N118,906, N100,784, N95,458 N90,956 and N86,448 respectively.
-
+Table 6a above depicts the top 5 most valuable customers by the total revenue generated. Statistics from the above table 7a reveals that Emily Phan, Deborah Bunmifield, Sylvia Foulston, Roy Skaria and Alejandro Grove are the most valuable customers by their total revenue at N118,906, N100,784, N95,458 N90,956 and N86,448 respectively.
 
 ### 6b. Products or Services The Most Valuable Typically Purchase
 
 **SQL Query**
-~~~SQL
+~~~sql
 SELECT top 5 Customer_Name, Product_Sub_Category, SUM(Order_Quantity*Unit_Price) AS TotalRevenue
 FROM Inventory
 GROUP BY Customer_Name, Product_Sub_Category
 ORDER BY TotalRevenue DESC
-
+~~~
 **Table 6b: Products or Services do the Most Valuable Typically Purchase**
+
+![Q6b](https://github.com/user-attachments/assets/e7a9a11b-8528-474c-a19b-4b54c9ae0998)
 
 Table 6b above shows that Office Machines and Copiers and Fax are the products that customers typically purchased.
 
 ### 7. Small Business Customer With Highest Sales
  
 **SQL Query**
-~~~SQL
+~~~sql
 SELECT TOP 1 Customer_Segment, Customer_Name, SUM(Sales) AS TotalSales
 FROM Inventory
 WHERE Customer_Segment = 'Small Business'
 GROUP BY Customer_Segment, Customer_Name
 ORDER BY TotalSales desc
+~~~
+**Table 7: Small Business Customer with The Highest Sales**
 
-**Table 8: Small Business Customer with The Highest Sales**
+![Q7](https://github.com/user-attachments/assets/be1f4d9e-3f09-4d6f-93a6-75c8416435a8)
 
-The Table 8 above depicts the small business customer with the highest sales. The result shows that Corporate has the highest sales, N5,498,905.
+Table 7 above depicts the small business customer with the highest sales. The result shows that Corporate has the highest sales, N5,498,905.
 
 ### 8. Corporate Customer Who Placed the Most Number of Orders Between 2009 – 2012
 
 **SQL Query**
-~~~SQL
+~~~sql
 SELECT top 1 Customer_Name, Customer_Segment,
 Count(Order_ID) AS TotalOrders
 FROM Inventory
@@ -236,52 +245,59 @@ WHERE Customer_Segment = 'Corporate'
 AND Year (Order_Date) BETWEEN 2009 AND 2012
 GROUP BY Customer_Name, Customer_Segment
 ORDER BY TotalOrders desc;
+~~~
+**Table 8: Corporate Customer who Placed the Most Number of Orders in 2009 – 2012**
 
-**Table 9: Corporate Customer who Placed the Most Number of Orders in 2009 – 2012**
+![Q8](https://github.com/user-attachments/assets/bc92dd32-202d-4d68-b582-cfb1f47568f9)
 
-Table 9 above reveals that Adam Hart who is a corporate customer place the greatest number of orders (27) between 2009 and 2012.
+Table 8 above reveals that Adam Hart who is a corporate customer place the greatest number of orders (27) between 2009 and 2012.
 
-### 9. Which consumer customer was the most profitable one? 
+### 9. The Most Profitable Consumer Customer 
 
 **SQL Query**
-~~~SQL
+~~~sql
 SELECT top 1 Customer_Segment, Customer_Name, SUM(Profit) AS TotalProfit
 FROM Inventory
 Where Customer_Segment = 'Consumer'
 GROUP BY Customer_Name, Customer_segment
 ORDER BY TotalProfit DESC
-                      
-**Table 10: Consumer Customer was The Most Profitable One**
+~~~                   
+**Table 9: The Most Profitable Consumer Customer**
 
-Table above depicts that Emily Phan was the most profitable customer at $34,005
+![Q9](https://github.com/user-attachments/assets/40a81214-8c2b-43e4-ac8b-887ac8a20cf3)
 
+Table 9 above depicts that Emily Phan was the most profitable customer at $34,005
 
 ### 10. Customer who Returned Items, and The segment they belong to
 
 **SQL Query**
-~~~SQL
+~~~sql
 SELECT DISTINCT o.[Order_ID], o.[Customer_Name], o.[Customer_Segment]
 FROM Inventory o
 JOIN [dbo].[Order_Status] r 
 ON o.[Order_ID] = r.[Order_ID]
 WHERE r.Status = 'Returned';
+~~~
+**Table 10: Customer who Returned Items, and The segment they belong to**
 
-**Table 11: Customer who Returned Items, and The segment they belong to**
+![Q10](https://github.com/user-attachments/assets/89f7a9b0-1eac-42d9-a591-e83a36678c82)
 
+Statistics from Table 10 above shows that a large number of customers returned their items and these belong to customer segments such as Corporate Customers, Consumer Customers, Home Office Customers and Small Business Customers.
 
 ### 11. If the delivery truck is the most economical but the slowest shipping method and Express Air is the fastest but the most expensive one, do you think the company appropriately spent shipping costs based on the Order Priority? Explain your answer
 
 **Explanations:**
 If the Delivery Truck of Kultra Mega Stores (KMS) is the most economical but slowest shipping method, and the Express Air is the fastest but most expensive, then shipping decisions should ideally align with the Order Priority of each order.
 
- 	High-priority orders (like "Critical" or "High") should use Express Air, even though it is expensive, to ensure fast delivery.
- 	Low-priority orders (like "Low", "Medium" or Regular) should use the Delivery Truck to save costs, since speed is less important.
-To determine if Kultra Mega Stores (KMS) appropriately spent shipping costs based on the Order Priority, there is a need to examine whether there is a match between shipping methods and order priorities:
+High-priority orders (like "Critical" or "High") should use Express Air, even though it is expensive, to ensure fast delivery.
+Low-priority orders (like "Low", "Medium" or Regular) should use the Delivery Truck to save costs, since speed is less important.
+To determine if Kultra Mega Stores (KMS) appropriately spent shipping costs based on the Order Priority, there is a need to examine whether there is a match between
+shipping methods and order priorities:
  If most Critical/High orders were shipped via Express Air and most Low/Medium priority orders were shipped via Delivery Truck. Then the company is appropriately managing its shipping costs, balancing speed for urgent orders and cost savings for non-urgent orders.
 However, if many Low-priority orders were sent via Express Air, and many Critical orders were delayed using Delivery Truck. Then the company may be wasting money or failing to meet delivery expectations, showing a misalignment between cost and urgency.
 
 **SQL Query**
-~~~SQL
+~~~sql
 SELECT 
     Order_Priority,
     Ship_Mode,
@@ -291,10 +307,12 @@ SELECT
    FROM Inventory
   GROUP BY Order_Priority, Ship_Mode
  ORDER BY Order_Priority, Ship_Mode desc
-                                
-**Table 12: Whether Kultra Mega Stores (KMS) Appropriately Spent Shipping Costs Based on the Order Priority**
+~~~                                
+**Table 11: Whether Kultra Mega Stores (KMS) Appropriately Spent Shipping Costs Based on the Order Priority**
 
-Statistics from Table 12 above shows a clear pattern that shows a match between shipping methods and order priorities, although it is not perfectly strict. Here's the analysis from the table:
+![Q11](https://github.com/user-attachments/assets/fc62f940-2cf8-47a6-85f1-26a5e8c986ca)
+
+Statistics from Table 11 above shows a clear pattern that shows a match between shipping methods and order priorities, although it is not perfectly strict. Here's the analysis from the table:
 1. Critical Priority Orders: Here, cost
 Express Air: 200 orders, ₦198,005 (1 day)
 Delivery Truck: 228 orders, ₦1,221,313 (1 day)
@@ -331,7 +349,7 @@ Avoid "Not Specified" to make informed shipping decisions.
 Favor Express Air when it is both faster and cheaper (as seen here).
 Proper controls need to be put in place to reduce costs and match urgency with speed.
 
-
+### Findings from the Study
 
 
                                
