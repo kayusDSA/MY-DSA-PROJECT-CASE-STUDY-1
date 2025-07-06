@@ -1,6 +1,4 @@
-
-
-### Table of Content
+### Table of Contents
 1. Project Topic
 2. Description
 3. Project Overview
@@ -10,13 +8,14 @@
 7. Data Cleaning and Preparation
 8. Exploratory Data Analysis for Kultra Mega Stores (2009–2012)
 - Understanding the Dataset
-Project Reqiurement
-Case Scenario I
-Case Scenario II
-Data Cleaning and Preparation
-7. Data Analyses  
-
-
+- Project Reqiurement
+  Case Scenario I
+  Case Scenario II
+- Data Cleaning and Preparation
+9. Data Analyses
+10. Finding of the study
+11. Recommendations
+  
 ### Project Topic 
 Sales Performance and Inventory Utilization of Kultra Mega Stores (KMS) from 2009 – 2012, Lagos.
 
@@ -43,20 +42,20 @@ Click on Allow Nulls for Unit_Price and Profit
 
 ### Exploratory Data Analysis for Kultra Mega Stores (2009–2012)
 ### Understanding the Dataset
-- Order ID
-- Order Date
-- Product Name
-- Category (Furniture, Office Supplies)
-- Sub-Category
-- Quantity
+- Order_ID
+- Order_Date
+- Product_Name
+- Product_Category
+- Product_Sub-Category
+- Order_Quantity
 - Sales
 - Discount
 - Profit
-- Customer Type
+- Customer Segments
 - Region or City
-- Order Priority
-- Shipping Cost
-- Ship Mode
+- Order_Priority
+- Shipping_Cost
+- Ship_Mode
 ### Project Reqiurement
 #### Case Scenario I
 1. Which product category had the highest sales?
@@ -371,7 +370,7 @@ The most profitable consumer, Emily Phan generated  $34,005 profit.
 Moreover, findings shows that a large number of customers who are Corporate Customers, Consumer Customers, Home Office Customers and Small Business Customers returned their items for quality control and service improvement tracking. There is no consistent alignment between order priority and shipping methods.
 For instance, Critical orders used both Express Air and Delivery Truck, but the Truck was more expensive despite similar delivery speed. Low-priority orders were unnecessarily shipped using Express Air.
 
-### Recommendations to KMS Management
+### Recommendations
 
 Based on the findings, the following recommendations are provided for Kultra Mega Stores (KMS) management:
 Optimize Shipping Decisions:
