@@ -20,7 +20,7 @@
 Sales Performance and Inventory Utilization of Kultra Mega Stores (KMS) from 2009 – 2012, Lagos.
 
 # Description 
-This is one of my projects, in Digital SkillUp Africa (DSA) through The IncubatorNG, which focuses on Sales Performance and Inventory Utilization of Kultra Mega Stores (KMS), Lagos, Nigeria. An Excel file containing order data from 2009 to 2012 was analyzed to provide key insights and findings for management use.
+This is one of my projects in Digital SkillUp Africa (DSA) through The IncubatorNG. It focuses on Sales Performance and Inventory Utilization of Kultra Mega Stores (KMS), Lagos, Nigeria. An Excel file containing order data from 2009 to 2012 was analyzed to provide key insights and findings for management use.
 
 ### Project Overview
 This project aims to generate insight into the sales performance and inventory utilization of Kultra Mega Stores (KMS) from 2009 – 2012, focusing on identifying sales, growth opportunities, customer segments, operational efficiencies, and optimize inventory management for improved business efficiency.
@@ -42,6 +42,7 @@ Click on Allow Nulls for Unit_Price and Profit
 
 ### Exploratory Data Analysis for Kultra Mega Stores (2009–2012)
 ### Understanding the Dataset
+
 - Order_ID
 - Order_Date
 - Product_Name
