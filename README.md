@@ -42,7 +42,7 @@ Click on Allow Nulls for Unit_Price and Profit
 
 ### Exploratory Data Analysis for Kultra Mega Stores (2009–2012)
 ### Understanding the Dataset
-
+[KMS Sql Case Study.csv](https://github.com/user-attachments/files/21127073/KMS.Sql.Case.Study.csv)
 - Order_ID
 - Order_Date
 - Product_Name
